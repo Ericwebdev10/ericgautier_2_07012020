@@ -67,3 +67,42 @@ header h2
     color: black;
     font-size: 0.8em;
 }
+
+#search_map_icon
+{
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    height: 40px;   
+    float: left;
+    text-align: center;
+    padding-right: 10px;
+    width: 3%;
+}
+
+#search_input
+{
+    background-color: white;
+    border-color: #f2f2f2;
+    border-width: 1px;
+    text-decoration: black;
+    font-weight: bold;
+    height: 36px;
+    border-left: none;
+    margin-left: -4px;
+    float: left;  
+    width: 11%;
+}
+
+#search_button
+{
+    background-color:#0065fc;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    float: left;
+    min-width: fit-content;
+    margin-left: -2px;
+    border-radius: 5px;
+}
