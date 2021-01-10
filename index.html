@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="index.css" />
         <!-- Load icon library - TBU : change to local storage -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!--added to activate fas fa-map-marker-alt-->
         <title>Reservia</title>
     </head>
 
@@ -26,17 +27,11 @@
             <h2>En plein centre ville ou en pleine nature</h2>
 
             <div id="header_search">
-                <form class="example" action="action_page.php">
-                    <button type="search"><i class="fa fa-search"></i></button>
+                <form class="header_search_form" action="">
+                    <button type="button"><i class='fas fa-map-marker-alt'></i></button>
                     <input type="text" placeholder="Search.." name="search">
                     <input type="submit" value="Rechercher" />
-                    <!--
-                    <i class="fas fa-map-marker-alt"></i>
-                    <i class="fas fa-search"></i>
-                    -->
-                 </form>
-                
-
+                 </form>             
             </div>
 
             <div id="header_filters">              
