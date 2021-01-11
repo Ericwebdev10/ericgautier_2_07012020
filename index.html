@@ -25,12 +25,14 @@
                         
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
+            <br>
 
             <div id="header_search">
                 <form id="header_search_form" class="header_search_form" method="POST" action=""> <!--keep action= "blank" to avoid error message when clicked-->
                     <button id="search_map_icon" type="button"><i class='fas fa-map-marker-alt'></i></button> <!--need script in head <script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
                     <input id="search_input" type="text" placeholder="Marseille, France" name="search">
                     <button id="search_button" type="submit">Rechercher</button>
+                    <!--for responsive design : <i class="fas fa-search"></i>-->
                  </form>             
             </div>
             <br>
@@ -41,7 +43,7 @@
                 <div id="filter_text">Filtres</div>    
                 <form id="header_filter_1" class="header_filter_1" method="POST" action=""> 
                     <button id="filter_icon" type="button"><i class='fas fa-money-bill-wave'></i></button> 
-                    <button id="filter_button" type="submit">Economique</button>
+                    <button id="filter_button" type="submit">Économique</button>
                  </form>             
                  <form id="header_filter_2" class="header_filter_2" method="POST" action=""> 
                     <button id="filter_icon" type="button"><i class="fas fa-child"></i></button> 
@@ -56,9 +58,11 @@
                     <button id="filter_button" type="submit">Animaux autorisés</button>
                  </form>             
             </div>
-            
+            <br>
+
             <div id="header_info">
-               
+                <i class="fas fa-info-circle"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
         </header>

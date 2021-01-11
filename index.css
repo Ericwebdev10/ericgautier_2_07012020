@@ -82,7 +82,7 @@ header p
 {
     background-color: #f2f2f2;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 40px;   
     float: left;
     text-align: center;
@@ -122,7 +122,9 @@ header p
     float: left;
     min-width: fit-content;
     margin-left: -4px;
-    border-radius: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
     position: relative; /*item appears in back */
     z-index: 1;         /*item appears in back */
 }
@@ -142,17 +144,17 @@ header p
 
 #filter_icon
 {
- background-color: #deebff;
- border: none;
- border-radius: 50px;
- height: 40px;   
- float: left;
- text-align: center;
- width: 3%;
- min-width: 40px;
- margin-left: 20px;
- position: relative; /*this is to bring item to front */
- z-index: 2;         /*this is to bring item to front with higher z-index */
+    background-color: #deebff;
+    color: #0065fc;
+    border: none;
+    border-radius: 50px;
+    height: 40px;   
+    float: left;
+    text-align: center;
+    min-width: 40px;
+    margin-left: 20px;
+    position: relative; /*this is to bring item to front */
+    z-index: 2;         /*this is to bring item to front with higher z-index */
 }
 
 #filter_button
@@ -166,9 +168,28 @@ header p
     float: left;
     min-width: fit-content;
     padding-left: 50px;
-    padding-right: 30px;
+    padding-right: 20px;
     margin-left: -40px;
     border-radius: 50px;
     position: relative; /*item appears in back */
     z-index: 1;         /*item appears in back */
 }
+
+#header_info
+{
+    display: flex;
+}
+
+#header_info i
+{  
+    color: #0065fc;
+    padding-top: 12px;   
+    padding-right: 10px;
+}
+    /*
+    fill: #0065fc;
+    text-decoration: #0065fc;
+    border-style: solid;
+    border: black;
+    */
+
