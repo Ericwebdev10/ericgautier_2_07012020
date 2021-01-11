@@ -3,33 +3,66 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="index.css" />
+        <!-- Load icon library - TBU : change to local storage 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!--added to activate fas fa-map-marker-alt-->
         <title>Reservia</title>
     </head>
 
     <body>
         <!--------------------------------Header-------------------------------->
-        <header> 
-            <div id="header_logo">
-
+    <header> 
+            <div id="header_logo_and_nav">
+                <img src="images/logo/Reservia@3x.png" alt="logo Reservia">
+                <nav>
+                    <ul>
+                       <li><a href="#content_sub_hebergement" id="nav_item1_2">Hébergements</a></li> <!--don't forget to close the tag "</a>"" !!!-->
+                       <li><a href="#content_main_activite" id="nav_item1_2">Activités</a></li>
+                       <li><a href="#" id="nav_item3">S'inscrire</a></li>                     
+                    </ul>
+                </nav>
             </div>
-            
-            <nav>
-
-            </nav>
-
-            <h1></h1>
-            <h2></h2>
+                        
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <br>
 
             <div id="header_search">
-
+                <form id="header_search_form" class="header_search_form" method="POST" action=""> <!--keep action= "blank" to avoid error message when clicked-->
+                    <button id="search_map_icon" type="button"><i class='fas fa-map-marker-alt'></i></button> <!--need script in head <script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
+                    <input id="search_input" type="text" placeholder="Marseille, France" name="search">
+                    <button id="search_button" type="submit">Rechercher</button>
+                    <!--for responsive design : <i class="fas fa-search"></i>-->
+                 </form>             
             </div>
+            <br>
+            <br>
+            <br>
 
-            <div id="header_filters">              
-
+            <div id="header_filters">
+                <div id="filter_text">Filtres</div>    
+                <form id="header_filter_1" class="header_filter_1" method="POST" action=""> 
+                    <button id="filter_icon" type="button"><i class='fas fa-money-bill-wave'></i></button> 
+                    <button id="filter_button" type="submit">Économique</button>
+                 </form>             
+                 <form id="header_filter_2" class="header_filter_2" method="POST" action=""> 
+                    <button id="filter_icon" type="button"><i class="fas fa-child"></i></button> 
+                    <button id="filter_button" type="submit">Familial</button>
+                 </form>             
+                 <form id="header_filter_3" class="header_filter_3" method="POST" action=""> 
+                    <button id="filter_icon" type="button"><i class="fas fa-heart"></i></button> 
+                    <button id="filter_button" type="submit">Romantique</button>
+                 </form>             
+                 <form id="header_filter_4" class="header_filter_4" method="POST" action=""> 
+                    <button id="filter_icon" type="button"><i class="fas fa-dog"></i></button> 
+                    <button id="filter_button" type="submit">Animaux autorisés</button>
+                 </form>             
             </div>
-            
+            <br>
+
             <div id="header_info">
-               
+                <i class="fas fa-info-circle"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
         </header>
@@ -55,6 +88,7 @@
 
         <!------------------------------Footer------------------------------>
         <footer> 
+            <!--
             <div id="footer_a_propos">xxxx
                 <ul>
                     <li><a href="#">xxxx</a></li>
@@ -75,6 +109,7 @@
                     <li><a href="#">xxxx</a></li>
                  </ul>
             </div>
+            -->
         </footer>
 
     </body>
