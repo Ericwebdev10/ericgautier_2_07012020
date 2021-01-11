@@ -42,21 +42,10 @@ nav li
     nav ul
     {
         display: flex;                  
-        flex-direction: row-reverse;/*!!!!"s'inscrire" position ok, but wrap doesn't work --> piss me off!!!!*/
+        flex-direction: row-reverse;
         flex-wrap: wrap-reverse;
     }
 }
-/*        display: flex;
-        flex-direction: column-reverse;
-        
-        display: flexbox;
-        flex-wrap: wrap;
-        flex-wrap: wrap-reverse;
-        flex-direction: row-reverse;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-       */
-
 
 nav a
 {
@@ -100,18 +89,20 @@ header p
     padding-right: 10px;
     width: 3%;
     min-width: fit-content;
-    position: relative; /*item appear in back */
-    z-index: 1;         /*item appear in back */
+    position: relative; /*item appears in back */
+    z-index: 1;         /*item appears in back */
 }
 
 #search_input
 {
     background-color: white;
     border-color: #f2f2f2;
-    border-width: 1px;
+    border-width: 2px;
+    border-style: solid;
+    border-right: none;
     text-decoration: black;
     font-weight: bold;
-    height: 36px;
+    height: 34px;
     border-left: none;
     margin-left: -4px;
     float: left;  
@@ -132,6 +123,52 @@ header p
     min-width: fit-content;
     margin-left: -4px;
     border-radius: 5px;
-    position: relative; /*item appear in back */
-    z-index: 1;         /*item appear in back */
+    position: relative; /*item appears in back */
+    z-index: 1;         /*item appears in back */
+}
+
+#header_filters
+{
+    display: flex;                  
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+
+ #filter_text
+ {
+     font-weight: bold;
+     margin-top: 10px;
+ }
+
+#filter_icon
+{
+ background-color: #deebff;
+ border: none;
+ border-radius: 50px;
+ height: 40px;   
+ float: left;
+ text-align: center;
+ width: 3%;
+ min-width: 40px;
+ margin-left: 20px;
+ position: relative; /*this is to bring item to front */
+ z-index: 2;         /*this is to bring item to front with higher z-index */
+}
+
+#filter_button
+{
+    background-color: white;
+    border-color: #f2f2f2;
+    border-style: solid;
+    border-width: 2px;
+    font-weight: bold;
+    height: 40px;
+    float: left;
+    min-width: fit-content;
+    padding-left: 50px;
+    padding-right: 30px;
+    margin-left: -40px;
+    border-radius: 50px;
+    position: relative; /*item appears in back */
+    z-index: 1;         /*item appears in back */
 }
