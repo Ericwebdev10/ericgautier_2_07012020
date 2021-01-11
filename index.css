@@ -37,6 +37,27 @@ nav li
     margin-left: 50px;
 }
 
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    nav ul
+    {
+        display: flex;                  
+        flex-direction: row-reverse;/*!!!!"s'inscrire" position ok, but wrap doesn't work --> piss me off!!!!*/
+        flex-wrap: wrap-reverse;
+    }
+}
+/*        display: flex;
+        flex-direction: column-reverse;
+        
+        display: flexbox;
+        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+       */
+
+
 nav a
 {
     font-size: 1em;
@@ -62,7 +83,7 @@ header h1
     font-size: 1.2em;
 }
 
-header h2
+header p
 {
     color: black;
     font-size: 0.8em;
@@ -78,6 +99,9 @@ header h2
     text-align: center;
     padding-right: 10px;
     width: 3%;
+    min-width: fit-content;
+    position: relative; /*item appear in back */
+    z-index: 1;         /*item appear in back */
 }
 
 #search_input
@@ -92,6 +116,9 @@ header h2
     margin-left: -4px;
     float: left;  
     width: 11%;
+    min-width: fit-content;
+    position: relative; /*this is to bring item to front */
+    z-index: 2;         /*this is to bring item to front with higher z-index */
 }
 
 #search_button
@@ -103,6 +130,8 @@ header h2
     height: 40px;
     float: left;
     min-width: fit-content;
-    margin-left: -2px;
+    margin-left: -4px;
     border-radius: 5px;
+    position: relative; /*item appear in back */
+    z-index: 1;         /*item appear in back */
 }
