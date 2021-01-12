@@ -19,7 +19,8 @@ body
 {
     width: 95%;
     margin: auto;
-    font-family: 'CrayonL', 'Raleway', Arial, sans-serif; /*'CrayonL', is only for test purposes*/
+    font-family: 'Raleway', Arial, sans-serif; /*'CrayonL', is only for test purposes*/
+    max-width: 1100px;
 }
 
 
@@ -186,7 +187,7 @@ header p
 #header_filters :hover
 {
     border-color: green;
-    border-width: 5px;
+    border-width: 3px;
 }
 
 #header_info
@@ -194,24 +195,26 @@ header p
     display: flex;
 }
 
-#header_info i  /* backagroud to be update */
+#header_info i  
 {  
     color: white;
     background-color: #0065fc;
-    padding-top: 12px;   
-    padding-right: 10px;
-
+    border-radius: 50%;
+    border: solid;
+    border-color: #f2f2f2;  
+    border-width: 1px;
 }
-    /*
-    fill: #0065fc;
-    text-decoration: #0065fc;
-    border-style: solid;
-    border: black;
-    */
+
+#header_info p
+{
+    
+    margin: 0%;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
 
 /*------------------------------------------Header--------------------------------------------------*/
-
-
 #content_main h1
 {
     font-size: 1.2em;
