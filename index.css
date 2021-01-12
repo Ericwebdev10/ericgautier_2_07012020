@@ -1,25 +1,71 @@
-/*fonts*/
-
-/*@font-face
+/*------------------------------------------Fonts--------------------------------------------------*/
+/* raleway-regular - latin */
+@font-face 
 {
-    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/raleway-v18-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/raleway-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/raleway-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/raleway-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/raleway-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/raleway-v18-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
-*/
 
+/*------------------------------------------Body--------------------------------------------------*/
 body 
 {
     width: 95%;
     margin: auto;
+    font-family: 'Raleway', Arial, sans-serif; /*'CrayonL', is only for test purposes*/
+    max-width: 1100px;
+}
+
+/*------------------------------------------Header--------------------------------------------------*/
+#register_position
+{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 100px;
+    font-weight: bold;
+}
+
+nav
+{
+    position: absolute;
+    right: 125px;
+    top: 9px;
+}
+
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    nav
+    {
+        position: initial;
+    }
 }
 
 
-/*Header*/
+#nav_item3
+{
+    color: #0065fc;
+    text-decoration: none;
+}
+
+#register_position :hover
+{
+    border-top: 2px solid #0065fc;
+}
+/*
 #header_logo_and_nav
 {
     display: flex;
     justify-content: space-between;
 }
-
+*/
 header img
 {
     height: 40px;
@@ -34,17 +80,7 @@ nav ul
 nav li
 {
     display: inline-block;
-    margin-left: 50px;
-}
-
-@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
-{
-    nav ul
-    {
-        display: flex;                  
-        flex-direction: row-reverse;
-        flex-wrap: wrap-reverse;
-    }
+    margin-right: 50px;
 }
 
 nav a
@@ -52,12 +88,6 @@ nav a
     font-size: 1em;
     text-decoration: none;
     color: black;
-}
-
-#nav_item3
-{
-    color: #0065fc;
-    font-weight: bold;
 }
 
 nav a:hover
@@ -68,13 +98,11 @@ nav a:hover
 
 header h1
 {
-    color: black;
     font-size: 1.2em;
 }
 
 header p
 {
-    color: black;
     font-size: 0.8em;
 }
 
@@ -175,21 +203,39 @@ header p
     z-index: 1;         /*item appears in back */
 }
 
+#header_filters :hover
+{
+    border-color: green;
+    border-width: 3px;
+}
+
 #header_info
 {
     display: flex;
 }
 
-#header_info i
+#header_info i  
 {  
-    color: #0065fc;
-    padding-top: 12px;   
-    padding-right: 10px;
+    color: white;
+    background-color: #0065fc;
+    border-radius: 50%;
+    border: solid;
+    border-color: #f2f2f2;  
+    border-width: 1px;
 }
-    /*
-    fill: #0065fc;
-    text-decoration: #0065fc;
-    border-style: solid;
-    border: black;
-    */
+
+#header_info p
+{
+    
+    margin: 0%;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+
+/*------------------------------------------Header--------------------------------------------------*/
+#content_main h1
+{
+    font-size: 1.2em;
+}
 

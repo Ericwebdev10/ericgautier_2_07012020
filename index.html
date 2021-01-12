@@ -3,9 +3,13 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="index.css" />
-        <!-- Load icon library - TBU : change to local storage 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!--added to activate fas fa-map-marker-alt-->
+        <!-- Link to Raleway font not anymore needed, switch to self-host : local folder ../fonts/xxxxx.xxx
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+        -->   
+        <!-- Load icon library - TBU : change to local storage ?
+        -->
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!--added to activate fas fa-map-marker-alt and other icons-->
         <title>Reservia</title>
     </head>
 
@@ -14,14 +18,14 @@
     <header> 
             <div id="header_logo_and_nav">
                 <img src="images/logo/Reservia@3x.png" alt="logo Reservia">
-                <nav>
-                    <ul>
-                       <li><a href="#content_sub_hebergement" id="nav_item1_2">Hébergements</a></li> <!--don't forget to close the tag "</a>"" !!!-->
-                       <li><a href="#content_main_activite" id="nav_item1_2">Activités</a></li>
-                       <li><a href="#" id="nav_item3">S'inscrire</a></li>                     
-                    </ul>
-                </nav>
-            </div>
+                <div id="register_position"><a href="#" id="nav_item3">S'inscrire</a></div>
+            </div>    
+            <nav>
+                <ul>
+                    <li><a href="#content_sub_hebergement" id="nav_item1_2">Hébergements</a></li> <!--don't forget to close the tag "</a>"" !!!-->
+                    <li><a href="#content_main_activite" id="nav_item1_2">Activités</a></li>                                           
+                </ul>
+            </nav>      
                         
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
@@ -66,6 +70,7 @@
             </div>
 
         </header>
+        <br>
 
         <!------------------------------Main page------------------------------>
         <div id="content_main">
@@ -73,16 +78,16 @@
             <div id="content_sub">
 
                 <section id="content_sub_hebergement">
-                    <h1></h1>
+                    <h1>Hébergements à Marseille</h1>
                 </section>
                 <section id="content_sub_popularite">
-                    <h1></h1>
+                    <h1>Les plus populaires</h1>
                 </section>
 
             </div>
 
             <section id="content_main_activite">
-                <h1></h1>
+                <h1>Activités à Marseille</h1>
             </section>
         </div>
 
