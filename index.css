@@ -1,15 +1,25 @@
-/*fonts*/
-
-/*@font-face
+/*------------------------------------------Fonts--------------------------------------------------*/
+/* raleway-regular - latin */
+@font-face 
 {
-    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/raleway-v18-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/raleway-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/raleway-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/raleway-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/raleway-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/raleway-v18-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
-*/
 
+/*------------------------------------------Body--------------------------------------------------*/
 body 
 {
     width: 95%;
     margin: auto;
+    font-family: 'CrayonL', 'Raleway', Arial, sans-serif; /*'CrayonL', is only for test purposes*/
 }
 
 
@@ -190,6 +200,7 @@ header p
     background-color: #0065fc;
     padding-top: 12px;   
     padding-right: 10px;
+
 }
     /*
     fill: #0065fc;
