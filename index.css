@@ -13,7 +13,7 @@ body
 }
 
 
-/*Header*/
+/*------------------------------------------Header--------------------------------------------------*/
 #header_logo_and_nav
 {
     display: flex;
@@ -68,13 +68,11 @@ nav a:hover
 
 header h1
 {
-    color: black;
     font-size: 1.2em;
 }
 
 header p
 {
-    color: black;
     font-size: 0.8em;
 }
 
@@ -175,14 +173,21 @@ header p
     z-index: 1;         /*item appears in back */
 }
 
+#header_filters :hover
+{
+    border-color: green;
+    border-width: 5px;
+}
+
 #header_info
 {
     display: flex;
 }
 
-#header_info i
+#header_info i  /* backagroud to be update */
 {  
-    color: #0065fc;
+    color: white;
+    background-color: #0065fc;
     padding-top: 12px;   
     padding-right: 10px;
 }
@@ -192,4 +197,12 @@ header p
     border-style: solid;
     border: black;
     */
+
+/*------------------------------------------Header--------------------------------------------------*/
+
+
+#content_main h1
+{
+    font-size: 1.2em;
+}
 
