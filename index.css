@@ -59,13 +59,7 @@ nav
 {
     border-top: 2px solid #0065fc;
 }
-/*
-#header_logo_and_nav
-{
-    display: flex;
-    justify-content: space-between;
-}
-*/
+
 header img
 {
     height: 40px;
@@ -232,10 +226,27 @@ header p
     padding-top: 2px;
 }
 
-
-/*------------------------------------------Header--------------------------------------------------*/
+/*------------------------------------------Sections--------------------------------------------------*/
 #content_main h1
 {
     font-size: 1.2em;
 }
 
+#content_sub
+{
+    background-color: lawngreen;
+    display: inline-flexbox;
+    flex-direction: column;
+}
+
+#content_sub_hebergement
+{
+    width: 300px;
+    background-color: red;
+}
+
+#content_sub_popularite
+{
+    width: 300px;
+    background-color: blue;
+}
