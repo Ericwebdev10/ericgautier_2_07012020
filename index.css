@@ -17,7 +17,7 @@
 /*------------------------------------------Body--------------------------------------------------*/
 body 
 {
-    width: 95%;
+    width: 90%;
     margin: auto;
     font-family: 'Raleway', Arial, sans-serif; /*'CrayonL', is only for test purposes*/
     max-width: 1100px;
@@ -90,6 +90,15 @@ nav a:hover
     border-top: 2px solid #0065fc;
 }
 
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    nav a:hover
+    {
+        border-top: none;
+        border-bottom: 2px solid #0065fc;
+    }
+}
+
 header h1
 {
     font-size: 1.2em;
@@ -110,7 +119,7 @@ header p
     text-align: center;
     padding-right: 10px;
     width: 3%;
-    min-width: fit-content;
+    min-width: 30px;
     position: relative; /*item appears in back */
     z-index: 1;         /*item appears in back */
 }
@@ -124,12 +133,12 @@ header p
     border-right: none;
     text-decoration: black;
     font-weight: bold;
-    height: 34px;
+    height: 35px;
     border-left: none;
-    margin-left: -4px;
+    margin-left: -6px;
     float: left;  
     width: 11%;
-    min-width: fit-content;
+    min-width: 150px;
     position: relative; /*this is to bring item to front */
     z-index: 2;         /*this is to bring item to front with higher z-index */
 }
@@ -143,7 +152,7 @@ header p
     height: 40px;
     float: left;
     min-width: fit-content;
-    margin-left: -4px;
+    margin-left: -8px;
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 10px;
@@ -161,7 +170,7 @@ header p
  #filter_text
  {
      font-weight: bold;
-     margin-top: 10px;
+     margin-top: 20px;
  }
 
 #filter_icon
@@ -175,6 +184,7 @@ header p
     text-align: center;
     min-width: 40px;
     margin-left: 20px;
+    margin-top: 10px;/* this is for responsive when wrapped*/
     position: relative; /*this is to bring item to front */
     z-index: 2;         /*this is to bring item to front with higher z-index */
 }
@@ -192,6 +202,7 @@ header p
     padding-left: 50px;
     padding-right: 20px;
     margin-left: -40px;
+    margin-top: 10px; /* this is for responsive when wrapped*/
     border-radius: 50px;
     position: relative; /*item appears in back */
     z-index: 1;         /*item appears in back */
