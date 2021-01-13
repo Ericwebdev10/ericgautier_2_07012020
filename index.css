@@ -20,7 +20,7 @@ body
     width: 90%;
     margin: auto;
     font-family: 'Raleway', Arial, sans-serif; /*'CrayonL', is only for test purposes*/
-    max-width: 1100px;
+    max-width: 1100px; /*TBU or check utility*/
 }
 
 /*------------------------------------------Header--------------------------------------------------*/
@@ -28,7 +28,7 @@ body
 {
     position: absolute;
     right: 25px;
-    top: 25px;
+    top: 30px;
     width: 100px;
     font-weight: bold;
 }
@@ -37,7 +37,7 @@ nav
 {
     position: absolute;
     right: 125px;
-    top: 9px;
+    top: 14px;
 }
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
@@ -119,7 +119,7 @@ header p
     text-align: center;
     padding-right: 10px;
     width: 3%;
-    min-width: 30px;
+    min-width: 40px;
     position: relative; /*item appears in back */
     z-index: 1;         /*item appears in back */
 }
@@ -238,26 +238,74 @@ header p
 }
 
 /*------------------------------------------Sections--------------------------------------------------*/
-#content_main h1
-{
-    font-size: 1.2em;
+/*debug mode*/
+.border{
+	border: 3px solid black;
+	margin: 2px;
+}
+.red {
+	border-color: red;
+}
+.green {
+	border-color: green;
+}
+.blue {
+	border-color: blue;
+}
+.yellow{
+    border-color: yellow;
 }
 
-#content_sub
+/*debug mode*/
+
+#main_container
 {
-    background-color: lawngreen;
-    display: inline-flexbox;
-    flex-direction: column;
+   /* max-width: 1200px; already define in body --> to delete  */ 
 }
 
-#content_sub_hebergement
+#sub_container_heberg_and_popu
 {
-    width: 300px;
-    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    #sub_container_heberg_and_popu
+    {
+        display: inline; /*TBU*/
+    }
+}
+
+#sub_sub_container_hebergement
+{
+    width: 68%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #content_sub_popularite
 {
-    width: 300px;
-    background-color: blue;
+    width: 28%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+#heberg_item
+{
+    width: 30%;
+
+}
+
+#heberg_item img
+{
+    height: 120px;
+}
+
+#heberg_item h3
+{
+    font-size: 0.8em;
+    font-weight: bold;
 }
