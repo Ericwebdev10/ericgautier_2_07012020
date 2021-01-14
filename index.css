@@ -171,7 +171,7 @@ header p
  {
      font-weight: bold;
      margin-top: 20px;
- }
+  }
 
 #filter_icon
 {
@@ -285,20 +285,11 @@ header p
     border-radius: 20px;
 }
 
-#sub_container_populaire /*green*/
-{
-    display: flex;
-    flex-direction: row;
-    width: 28%;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-}
-/*Hebergement*/
-#sub_sub_sub_container_hebergement_title p /*yellow*/
+/*------------------------------------------------sub section Hebergement*/
+#sub_sub_sub_container_title p /*yellow*/
 {
     font-weight: bold;
     padding-left: 2%;
-
 }
 
 #sub_sub_sub_container_hebergement_items /*yellow*/
@@ -308,7 +299,7 @@ header p
 	justify-content: space-around;
 }
 
-#heberg_item    /*yellow*/
+#heberg_item    /*black*/
 {
     width: 200px;   /*must be px --> % doesn't wrap in responsive*/
     background-color: white;
@@ -355,3 +346,20 @@ header p
     color: #f2f2f2;
 }
 
+/*------------------------------------------------sub section Populaire*/
+
+#sub_sub_container_populaire    /*green*/
+{
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+#sub_sub_sub_container_populaire_items /*yellow*/
+{
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+}
