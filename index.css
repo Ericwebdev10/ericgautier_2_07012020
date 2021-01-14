@@ -17,10 +17,10 @@
 /*------------------------------------------Body--------------------------------------------------*/
 body 
 {
-    width: 95%;
+    width: 90%;
     margin: auto;
     font-family: 'Raleway', Arial, sans-serif; /*'CrayonL', is only for test purposes*/
-    max-width: 1100px;
+    max-width: 1100px; /*TBU or check utility*/
 }
 
 /*------------------------------------------Header--------------------------------------------------*/
@@ -28,7 +28,7 @@ body
 {
     position: absolute;
     right: 25px;
-    top: 25px;
+    top: 30px;
     width: 100px;
     font-weight: bold;
 }
@@ -37,7 +37,7 @@ nav
 {
     position: absolute;
     right: 125px;
-    top: 9px;
+    top: 14px;
 }
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
@@ -59,13 +59,7 @@ nav
 {
     border-top: 2px solid #0065fc;
 }
-/*
-#header_logo_and_nav
-{
-    display: flex;
-    justify-content: space-between;
-}
-*/
+
 header img
 {
     height: 40px;
@@ -96,6 +90,15 @@ nav a:hover
     border-top: 2px solid #0065fc;
 }
 
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    nav a:hover
+    {
+        border-top: none;
+        border-bottom: 2px solid #0065fc;
+    }
+}
+
 header h1
 {
     font-size: 1.2em;
@@ -116,7 +119,7 @@ header p
     text-align: center;
     padding-right: 10px;
     width: 3%;
-    min-width: fit-content;
+    min-width: 40px;
     position: relative; /*item appears in back */
     z-index: 1;         /*item appears in back */
 }
@@ -130,12 +133,12 @@ header p
     border-right: none;
     text-decoration: black;
     font-weight: bold;
-    height: 34px;
+    height: 35px;
     border-left: none;
-    margin-left: -4px;
+    margin-left: -6px;
     float: left;  
     width: 11%;
-    min-width: fit-content;
+    min-width: 150px;
     position: relative; /*this is to bring item to front */
     z-index: 2;         /*this is to bring item to front with higher z-index */
 }
@@ -149,7 +152,7 @@ header p
     height: 40px;
     float: left;
     min-width: fit-content;
-    margin-left: -4px;
+    margin-left: -8px;
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 10px;
@@ -167,8 +170,8 @@ header p
  #filter_text
  {
      font-weight: bold;
-     margin-top: 10px;
- }
+     margin-top: 20px;
+  }
 
 #filter_icon
 {
@@ -181,6 +184,7 @@ header p
     text-align: center;
     min-width: 40px;
     margin-left: 20px;
+    margin-top: 10px;/* this is for responsive when wrapped*/
     position: relative; /*this is to bring item to front */
     z-index: 2;         /*this is to bring item to front with higher z-index */
 }
@@ -198,6 +202,7 @@ header p
     padding-left: 50px;
     padding-right: 20px;
     margin-left: -40px;
+    margin-top: 10px; /* this is for responsive when wrapped*/
     border-radius: 50px;
     position: relative; /*item appears in back */
     z-index: 1;         /*item appears in back */
@@ -232,10 +237,129 @@ header p
     padding-top: 2px;
 }
 
+/*------------------------------------------Sections--------------------------------------------------*/
+/*start debug mode
+.border{
+	border: 3px solid black;
+	margin: 2px;
+}
+.red {
+	border-color: red;
+}
+.green {
+	border-color: green;
+}
+.blue {
+	border-color: blue;
+}
+.yellow{
+    border-color: yellow;
+}
+/*end debug mode*/
 
-/*------------------------------------------Header--------------------------------------------------*/
-#content_main h1
+#main_container /*black*/
 {
-    font-size: 1.2em;
+   /* max-width: 1200px; already define in body --> to delete  */ 
 }
 
+#sub_container_heberg_and_popu /*blue*/
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    #sub_container_heberg_and_popu /*blue*/
+    {
+        display: inline; /*TBU*/
+    }
+}
+
+#sub_sub_container_hebergement /*green*/
+{
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+/*------------------------------------------------sub section Hebergement*/
+#sub_sub_sub_container_title p /*yellow*/
+{
+    font-weight: bold;
+    padding-left: 2%;
+}
+
+#sub_sub_sub_container_hebergement_items /*yellow*/
+{
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#heberg_item    /*black*/
+{
+    width: 200px;   /*must be px --> % doesn't wrap in responsive*/
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#heberg_item img    /*red*/
+{
+    object-fit: cover;  /* to use portion of the image*/
+    width: 96%;
+    height: 100px;
+    display: block;     /* to allow centering*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#heberg_item h3 /*red*/
+{
+    font-size: 0.9em;
+    font-weight: bolder;
+    height: 10px;
+    margin-left: 5%;
+}
+
+#heberg_item p /*red*/
+{
+    font-size: 0.8em;
+    font-weight: normal;
+    height: 10px;
+    margin-left: 5%;
+}
+
+.filled /*red*/
+{
+    color: #0065fc;
+}
+
+.nofill /*red*/
+{
+    color: #f2f2f2;
+}
+
+/*------------------------------------------------sub section Populaire*/
+
+#sub_sub_container_populaire    /*green*/
+{
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+#sub_sub_sub_container_populaire_items /*yellow*/
+{
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+}
