@@ -258,22 +258,19 @@ header p
 }
 /*end debug mode*/
 
-#main_container /*black*/
-{
-   /* max-width: 1200px; already define in body --> to delete  */ 
-}
-
 #sub_container_heberg_and_popu /*blue*/
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
 {
     #sub_container_heberg_and_popu /*blue*/
     {
-        display: inline; /*TBU*/
+        display: flexbox;
+        flex-direction: column-reverse;
+        
     }
 }
 
@@ -284,11 +281,20 @@ header p
     width: 68%;
     background-color: #f2f2f2;
     border-radius: 20px;
+    margin-right: 10px; /* this is only for tablet size 768 x 1024*/
 }
 
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    #sub_sub_container_hebergement /*green*/
+    {
+        width: 100%;
+    }
+}
 /*------------------------------------------------sub section Hebergement*/
 #sub_sub_sub_container_text p /*yellow*/
 {
+    font-size: 1.2em;
     font-weight: bold;
     padding-left: 2%;
 }
@@ -321,7 +327,7 @@ header p
     border-top-right-radius: 20px;
 }
 
-#heberg_item h3 /*red*/
+#heberg_item h3, #populaire_item h3 /*red*/
 {
     font-size: 0.9em;
     font-weight: bolder;
@@ -329,7 +335,7 @@ header p
     margin-left: 5%;
 }
 
-#heberg_item p /*red*/
+#heberg_item p, #populaire_item p /*red*/
 {
     font-size: 0.8em;
     font-weight: normal;
@@ -349,18 +355,66 @@ header p
 
 /*------------------------------------------------sub section Populaire*/
 
-#sub_sub_container_populaire    /*green*/
+#container_populaire    /*green*/
 {
     display: flex;
     flex-direction: column;
     width: 28%;
     background-color: #f2f2f2;
     border-radius: 20px;
+    min-width: 270px;
+    
 }
 
-#sub_sub_sub_container_populaire_items /*yellow*/
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    #container_populaire /*green*/
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+#container_populaire_text p /*yellow*/
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 2%;
+}
+
+#container_populaire_items /*yellow*/
 {
     display: flex;
     flex-wrap: wrap;
-	justify-content: space-around;
+    justify-content: space-around;
+
+}
+
+#populaire_item     /*black*/
+{
+    /*width: 200px;   /*must be px --> % doesn't wrap in responsive*/
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;  
+
+}
+
+#populaire_item img    /*red*/
+{
+    object-fit: cover;  /* to use portion of the image*/
+    width: 100px;
+    height: 130px;
+    display: block;     /* to allow centering*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#populaire_item h3 /*red*/
+{
+    height: 30px;
+    width: 150px;
 }
