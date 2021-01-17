@@ -258,22 +258,19 @@ header p
 }
 /*end debug mode*/
 
-#main_container /*black*/
-{
-   /* max-width: 1200px; already define in body --> to delete  */ 
-}
-
 #sub_container_heberg_and_popu /*blue*/
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
 {
     #sub_container_heberg_and_popu /*blue*/
     {
-        display: inline; /*TBU*/
+        display: flexbox;
+        flex-direction: column-reverse;
+        
     }
 }
 
@@ -284,8 +281,16 @@ header p
     width: 68%;
     background-color: #f2f2f2;
     border-radius: 20px;
+    margin-right: 10px; /* this is only for tablet size 768 x 1024*/
 }
 
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    #sub_sub_container_hebergement /*green*/
+    {
+        width: 100%;
+    }
+}
 /*------------------------------------------------sub section Hebergement*/
 #sub_sub_sub_container_text p /*yellow*/
 {
@@ -357,6 +362,17 @@ header p
     width: 28%;
     background-color: #f2f2f2;
     border-radius: 20px;
+    min-width: 270px;
+    
+}
+
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    #container_populaire /*green*/
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 #container_populaire_text p /*yellow*/
