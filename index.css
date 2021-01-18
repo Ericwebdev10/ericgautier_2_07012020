@@ -457,7 +457,7 @@ header p
     border-color: #f2f2f2;   
     box-shadow: 5px;
     margin-bottom: 10px;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
 #activites_item_small /*black*/
@@ -468,8 +468,9 @@ header p
     border-color: #f2f2f2;   
     box-shadow: 5px;
     margin-bottom: 15px;
-    margin-top:15px;
+    margin-top: 15px;
 }
+
 #activites_item_big img /* red*/
 {
     width: 240px;
