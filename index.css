@@ -1,3 +1,22 @@
+/*start debug mode
+.border{
+	border: 3px solid black;
+	margin: 2px;
+}
+.red {
+	border-color: red;
+}
+.green {
+	border-color: green;
+}
+.blue {
+	border-color: blue;
+}
+.yellow{
+    border-color: yellow;
+}
+/*end debug mode*/
+
 /*------------------------------------------Fonts--------------------------------------------------*/
 /* raleway-regular - latin */
 @font-face 
@@ -238,25 +257,6 @@ header p
 }
 
 /*------------------------------------------Sections--------------------------------------------------*/
-/*start debug mode
-.border{
-	border: 3px solid black;
-	margin: 2px;
-}
-.red {
-	border-color: red;
-}
-.green {
-	border-color: green;
-}
-.blue {
-	border-color: blue;
-}
-.yellow{
-    border-color: yellow;
-}
-/*end debug mode*/
-
 #sub_container_heberg_and_popu /*blue*/
 {
     display: flex;
@@ -326,7 +326,7 @@ header p
     border-top-right-radius: 20px;
 }
 
-#heberg_item h3, #populaire_item h3 /*red*/
+#heberg_item h3, #populaire_item h3, #activites_items h3 /*red*/
 {
     font-size: 0.9em;
     font-weight: bolder;
@@ -416,4 +416,76 @@ header p
 {
     height: 30px;
     width: 150px;
+}
+
+
+/*#container_activites /*green
+{
+/*    display: flexbox;
+/*    flex-direction: column;
+    margin-right: 10px; /* this is only for tablet size 768 x 1024
+}
+*/
+
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    #container_activites /*green*/
+    {
+        width: 100%;
+    }
+}
+
+#activites_items /*yellow*/
+{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+/*
+.border{    /*to be corrected!!!
+    border: 3px solid black;
+	margin: 2px;
+}
+*/
+#activites_item_big /*black*/
+{
+    width: 240px;
+    height: 400px;
+    border-radius: 20px;
+    border-color: #f2f2f2;   
+    box-shadow: 5px;
+    margin-bottom: 10px;
+    margin-top:15px;
+}
+
+#activites_item_small /*black*/
+{
+    width: 240px;
+    height: 200px;
+    border-radius: 20px;
+    border-color: #f2f2f2;   
+    box-shadow: 5px;
+    margin-bottom: 15px;
+    margin-top:15px;
+}
+#activites_item_big img /* red*/
+{
+    width: 240px;
+    height: 400px;
+    object-fit: cover;/* to use portion of the image*/
+    display: block; /* to allow centering*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#activites_item_small img /*red*/
+{
+    width: 240px;
+    height: 160px;
+    object-fit: cover;/* to use portion of the image*/
+    display: block; /* to allow centering*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
