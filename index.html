@@ -29,35 +29,30 @@
                         
             <h1 class="border red">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="border red">En plein centre ville ou en pleine nature</p>
-            <br>
 
-            <div id="header_search" class="border black">
-                <form id="header_search_form" class="border red" method="POST" action="__"> <!--keep action= "blank" to avoid error message when clicked-->
-                    <button id="search_map_icon" type="button" class="border red"><i class='fas fa-map-marker-alt'></i></button> <!--need script in head <script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
-                    <input id="search_input" type="text" class="border red" placeholder="Marseille, France" name="search">
-                    <button id="search_button" type="submit" class="border red">Rechercher</button>
-                    <button id="search_button_icon" type="submit" class="border red"><i class='fas fa-search'></i></button> <!--for responsive design : icon replace text "Rechercher"-->
-                </form>             
-            </div>
-            <br>
-            <br>
-            <br>
+            <form id="header_search_form" class="border blue" method="POST" action="__"> <!--keep action= "blank" to avoid error message when clicked-->
+                <button id="search_map_icon" type="button" class="border red"><i class='fas fa-map-marker-alt'></i></button> <!--need script in head <script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
+                <input id="search_input" type="text" class="border red" placeholder="Marseille, France" name="search">
+                <button id="search_button" type="submit" class="border red">Rechercher</button>
+                <button id="search_button_icon" type="submit" class="border red"><i class='fas fa-search'></i></button> <!--for responsive design : icon replace text "Rechercher"-->
+            </form>
+                           
             
             <div id="header_filters" class="border black">
-                <div id="filter_text">Filtres</div>    
-                <form method="POST" action=""> 
+                <div id="filter_text" class="border blue">Filtres</div>    
+                <form method="POST" action="" class="border blue"> 
                     <button id="filter_icon" type="button"><i class='fas fa-money-bill-wave'></i></button> 
                     <button id="filter_button" type="submit">Économique</button>
                 </form>             
-                <form method="POST" action=""> 
+                <form method="POST" action="" class="border blue"> 
                     <button id="filter_icon" type="button"><i class="fas fa-child"></i></button> 
                     <button id="filter_button" type="submit">Familial</button>
                 </form>             
-                <form method="POST" action=""> 
+                <form method="POST" action="" class="border blue"> 
                     <button id="filter_icon" type="button"><i class="fas fa-heart"></i></button> 
                     <button id="filter_button" type="submit">Romantique</button>
                 </form>             
-                <form method="POST" action=""> 
+                <form method="POST" action="" class="border blue"> 
                     <button id="filter_icon" type="button"><i class="fas fa-dog"></i></button> 
                     <button id="filter_button" type="submit">Animaux autorisés</button>
                 </form>             
