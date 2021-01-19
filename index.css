@@ -227,6 +227,7 @@ header p
     display: flex;                  
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 20px; /*replace <br> to keep margin with text below*/
  }
 
  #filter_text /*blue*/
