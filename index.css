@@ -59,15 +59,6 @@ nav
     top: 14px;
 }
 
-@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
-{
-    nav
-    {
-        position: initial;
-    }
-}
-
-
 #nav_item3
 {
     color: #0065fc;
@@ -111,6 +102,17 @@ nav a:hover
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
 {
+    nav
+    {
+        position: initial;
+    }
+
+    nav ul
+    {
+        text-align: center;  
+        border-bottom: 2px solid #f2f2f2;       
+    }
+
     nav a:hover
     {
         border-top: none;
@@ -191,7 +193,7 @@ header p
     min-width: fit-content;
     margin-left: -102px;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 20px;
     border-radius: 10px;
     position: relative; /*item appears in back */
     z-index: 1;         /*item appears in back */
