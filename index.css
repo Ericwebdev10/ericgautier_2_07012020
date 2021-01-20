@@ -1,3 +1,4 @@
+/*------------------------------------------Debug mode--------------------------------------------------*/
 /*start debug mode
 .border{
 	border: 3px solid black;
@@ -244,7 +245,7 @@ header p
     }
 }
 
-#filter_icon
+#filter_icon1, #filter_icon2, #filter_icon3, #filter_icon4 /* class doesn't work with button type */
 {
     background-color: #deebff;
     color: #0065fc;
@@ -260,7 +261,7 @@ header p
     z-index: 2;         /*this is to bring item to front with higher z-index */
 }
 
-#filter_button
+#filter_button1, #filter_button2, #filter_button3, #filter_button4 /* class doesn't work with button type */
 {
     background-color: white;
     border-color: #f2f2f2;
@@ -342,7 +343,7 @@ header p
     }
 }
 /*------------------------------------------Section : hébergement-------------------------*/
-#container_text p /*yellow*/
+.container_text p /*yellow*/
 {
     font-size: 1.2em;
     font-weight: bold;
@@ -356,7 +357,7 @@ header p
 	justify-content: space-around;
 }
 
-#heberg_item    /*black*/
+.heberg_item    /*black*/
 {
     width: 200px;   /*must be px --> % doesn't wrap in responsive*/
     background-color: white;
@@ -364,7 +365,7 @@ header p
     margin-bottom: 20px;
 }
 
-#heberg_item img    /*red*/
+.heberg_item img    /*red*/
 {
     object-fit: cover;  /* to use portion of the image*/
     width: 96%;
@@ -377,7 +378,6 @@ header p
     border-top-right-radius: 20px;
 }
 
-/*#heberg_item h3, #populaire_item h3, #activites_items h3 /*red*/
 h3
 {
     font-size: 0.9em;
@@ -386,7 +386,7 @@ h3
     margin-left: 5%;
 }
 
-#heberg_item p, #populaire_item p /*red*/
+.heberg_item p, .populaire_item p /*red*/
 {
     font-size: 0.8em;
     font-weight: normal;
@@ -426,13 +426,6 @@ h3
     }
 }
 
-#container_populaire_text p /*yellow*/
-{
-    font-size: 1.2em;
-    font-weight: bold;
-    padding-left: 2%;
-}
-
 #container_populaire_items /*yellow*/
 {
     display: flex;
@@ -441,7 +434,7 @@ h3
 
 }
 
-#populaire_item     /*black*/
+.populaire_item     /*black*/
 {
     /*width: 200px;   /*must be px --> % doesn't wrap in responsive*/
     background-color: white;
@@ -451,7 +444,7 @@ h3
 
 }
 
-#populaire_item img    /*red*/
+.populaire_item img    /*red*/
 {
     object-fit: cover;  /* to use portion of the image*/
     width: 100px;
@@ -464,7 +457,7 @@ h3
     border-bottom-left-radius: 20px;
 }
 
-#populaire_item h3 /*red*/
+.populaire_item h3 /*red*/
 {
     height: 30px;
     width: 150px;

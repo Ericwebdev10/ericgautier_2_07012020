@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="index.css" />
@@ -22,15 +22,15 @@
             </div>    
             <nav>
                 <ul class="border black">
-                    <li><a href="#content_sub_hebergement" id="nav_item1_2" class="border red">Hébergements</a></li>
-                    <li><a href="#content_main_activite" id="nav_item1_2" class="border red">Activités</a></li>                                           
+                    <li><a href="#content_sub_hebergement" class="border red">Hébergements</a></li>
+                    <li><a href="#content_main_activite" class="border red">Activités</a></li>                                           
                 </ul>
             </nav>      
                         
             <h1 class="border red">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="border red">En plein centre ville ou en pleine nature</p>
 
-            <form id="header_search_form" class="border blue" method="POST" action="__"> <!--keep action= "blank" to avoid error message when clicked-->
+            <form id="header_search_form" class="border blue" method="POST" action="noaction"> <!--keep action= "blank" to avoid error message when clicked-->
                 <button id="search_map_icon" type="button" class="border red"><i class='fas fa-map-marker-alt'></i></button> <!--need script in head <script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
                 <input id="search_input" type="text" class="border red" placeholder="Marseille, France" name="search">
                 <button id="search_button" type="submit" class="border red">Rechercher</button>
@@ -40,21 +40,21 @@
             
             <div id="header_filters" class="border black">
                 <div id="filter_text" class="border blue">Filtres</div>    
-                <form method="POST" action="" class="border blue"> 
-                    <button id="filter_icon" type="button"><i class='fas fa-money-bill-wave'></i></button> 
-                    <button id="filter_button" type="submit">Économique</button>
+                <form method="POST" action="noaction" class="border blue"> 
+                    <button id="filter_icon1" type="button"><i class='fas fa-money-bill-wave'></i></button> 
+                    <button id="filter_button1" type="submit">Économique</button>
                 </form>             
-                <form method="POST" action="" class="border blue"> 
-                    <button id="filter_icon" type="button"><i class="fas fa-child"></i></button> 
-                    <button id="filter_button" type="submit">Familial</button>
+                <form method="POST" action="noaction" class="border blue"> 
+                    <button id="filter_icon2" type="button"><i class="fas fa-child"></i></button> 
+                    <button id="filter_button2" type="submit">Familial</button>
                 </form>             
-                <form method="POST" action="" class="border blue"> 
-                    <button id="filter_icon" type="button"><i class="fas fa-heart"></i></button> 
-                    <button id="filter_button" type="submit">Romantique</button>
+                <form method="POST" action="noaction" class="border blue"> 
+                    <button id="filter_icon3" type="button"><i class="fas fa-heart"></i></button> 
+                    <button id="filter_button3" type="submit">Romantique</button>
                 </form>             
-                <form method="POST" action="" class="border blue"> 
-                    <button id="filter_icon" type="button"><i class="fas fa-dog"></i></button> 
-                    <button id="filter_button" type="submit">Animaux autorisés</button>
+                <form method="POST" action="noaction" class="border blue"> 
+                    <button id="filter_icon4" type="button"><i class="fas fa-dog"></i></button> 
+                    <button id="filter_button4" type="submit">Animaux autorisés</button>
                 </form>             
             </div>
 
@@ -71,12 +71,12 @@
             <div id="sub_container_heberg_and_popu" class="border blue">              
                 <article id="sub_sub_container_hebergement" class="border green">
                     
-                    <div id="container_text" class="border yellow">
+                    <div class="border yellow container_text">
                         <p id="content_sub_hebergement">Hébergements à Marseille</p>
                     </div>
                 
                     <div id="sub_sub_sub_container_hebergement_items" class="border yellow">
-                        <div id="heberg_item" class="border black">
+                        <div class="border black heberg_item">
                             <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo hebergement" class="border red">
                             <h3 class="border red">Auberge de la Cannebière</h3>
                             <p class="border red">Nuit à partir de <strong>25€</strong></p>
@@ -88,7 +88,7 @@
                                 <i class="fas fa-star nofill"></i>
                             </p>
                         </div>
-                        <div id="heberg_item" class="border black">
+                        <div class="border black heberg_item">
                             <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo hebergement" class="border red">
                             <h3 class="border red">Hôtel du port</h3>
                             <p class="border red">Nuit à partir de <strong>52€</strong></p>
@@ -100,7 +100,7 @@
                                 <i class="fas fa-star filled"></i>
                             </p>
                         </div>                       
-                        <div id="heberg_item" class="border black">
+                        <div class="border black heberg_item">
                             <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo hebergement" class="border red">
                             <h3 class="border red">Hôtel les mouettes</h3>
                             <p class="border red">Nuit à partir de <strong>76€</strong></p>
@@ -112,7 +112,7 @@
                                 <i class="fas fa-star nofill"></i>
                             </p>
                         </div>
-                        <div id="heberg_item" class="border black">
+                        <div class="border black heberg_item">
                             <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo hebergement" class="border red">
                             <h3 class="border red">Hôtel de la mer</h3>
                             <p class="border red">Nuit à partir de <strong>46€</strong></p>
@@ -124,7 +124,7 @@
                                 <i class="fas fa-star nofill"></i>
                             </p>
                         </div>
-                        <div id="heberg_item" class="border black">
+                        <div class="border black heberg_item">
                             <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo hebergement" class="border red">
                             <h3 class="border red">Auberge le Panier</h3>
                             <p class="border red">Nuit à partir de <strong>23€</strong></p>
@@ -136,7 +136,7 @@
                                 <i class="fas fa-star nofill"></i>
                             </p>
                         </div>
-                        <div id="heberg_item" class="border black">
+                        <div class="border black heberg_item">
                             <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo hebergement" class="border red">
                             <h3 class="border red">Hôtel chez Amina</h3>
                             <p class="border red">Nuit à partir de <strong>96€</strong></p>
@@ -151,21 +151,21 @@
                         
                     </div>                
 
-                    <div id="container_text" class="border yellow">
+                    <div class="border yellow container_text">
                         <p>Afficher plus</p>
                     </div>
 
                 </article>
                 <!------------------------------Aside = sub section on right side : "Populaire"----------------------------->
                 <aside id="container_populaire" class="border green">
-                    <div id="container_populaire_text" class="border yellow">
+                    <div class="border yellow container_text">
                         <p>Les plus populaires</p>
                     </div>
 
                     <div id="container_populaire_items" class="border yellow">
-                        <div id="populaire_item" class="border black">
+                        <div class="border black populaire_item">
                             <div><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo hebergement" class="border red"></div>
-                            <div id=populaire_item_text class="border blue">
+                            <div class="border blue">
                                 <h3 class="border red">Hôtel Le soleil du matin</h3>
                                 <p class="border red">Nuit à partir de <strong>128€</strong></p>
                                 <p id="stars_item" class="border red">
@@ -177,9 +177,9 @@
                                 </p>
                             </div>
                         </div>
-                        <div id="populaire_item" class="border black">
+                        <div class="border black populaire_item">
                             <div><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo hebergement" class="border red"></div>
-                            <div id=populaire_item_text class="border blue">
+                            <div class="border blue">
                                 <h3 class="border red">Au c&#x153;ur de l'eau Chambres d'hôtes</h3>
                                 <p class="border red">Nuit à partir de <strong>71€</strong></p>
                                 <p id="stars_item" class="border red">
@@ -191,9 +191,9 @@
                                 </p>
                             </div>
                         </div>
-                        <div id="populaire_item" class="border black">
+                        <div class="border black populaire_item">
                             <div><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo hebergement" class="border red"></div>
-                            <div id=populaire_item_text class="border blue">
+                            <div class="border blue">
                                 <h3 class="border red">Hôtel Tout bleu et Blanc </h3>
                                 <p class="border red">Nuit à partir de <strong>68€</strong></p>
                                 <p id="stars_item" class="border red">
@@ -211,7 +211,7 @@
             </div>
 
             <!------------------------------bottom section "Activités"----------------------------->
-            <div id="container_text" class="border yellow">
+            <div class="border yellow container_text">
                 <p id="title_activites">Activités à Marseille</p>
             </div>
                 <div class="row border yellow">
