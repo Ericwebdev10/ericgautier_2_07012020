@@ -463,7 +463,7 @@ h3
     width: 150px;
 }
 
-#stars_item
+.stars_item
 {
     margin-top: 45px;
 }
@@ -487,7 +487,7 @@ h3
     flex: 25%;
 }
 
-#activites_item_big, #activites_item_small /*black*/
+.activites_item_big, .activites_item_small /*black*/
 {
     width: 220px;
     height: 400px;
@@ -499,12 +499,12 @@ h3
     padding-bottom: 10px;
 }
 
-#activites_item_small /*black*/
+.activites_item_small /*black*/
 { 
     height: 185px;
 }
 
-#activites_item_big img, #activites_item_small img /* red*/
+.activites_item_big img, .activites_item_small img /* red*/
 {
     width: 220px;
     height: 360px;
@@ -514,7 +514,7 @@ h3
     border-top-right-radius: 20px;
 }
 
-#activites_item_small img /*red*/
+.activites_item_small img /*red*/
 {
     height: 145px;
 }
