@@ -539,25 +539,25 @@ h3
     }
 }
 
-#footer_item /* green*/
+.footer_item /* green*/
 {
     width: 300px;
     margin-right: 60px;
 }
 
 
-#footer_item a
+.footer_item a
 {
     font-size: 1em;
     text-decoration: none;
     color: black;
 }
 
-#footer_item ul
+.footer_item ul
 {
     list-style-type: none;
 }
-#ul_title
+.ul_title
 {
     padding-left: 38px;
 }
