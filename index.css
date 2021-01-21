@@ -40,7 +40,7 @@ body
     width: 90%;
     margin: auto;
     font-family: 'Raleway', Arial, sans-serif; /*'CrayonL', is only for test purposes*/
-    max-width: 1100px; /*TBU or check utility*/
+    max-width: 1100px;
 }
 
 /*------------------------------------------Header--------------------------------------------------*/
@@ -310,7 +310,7 @@ header p
 }
 
 /*------------------------------------------Sections--------------------------------------------------*/
-#sub_container_heberg_and_popu /*blue*/
+#container_heberg_and_popu /*blue*/
 {
     display: flex;
     justify-content: space-evenly;
@@ -318,14 +318,14 @@ header p
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
 {
-    #sub_container_heberg_and_popu /*blue*/
+    #container_heberg_and_popu /*blue*/
     {
         display: flexbox;
         flex-direction: column-reverse;       
     }
 }
 
-#sub_sub_container_hebergement /*green*/
+#container_hebergement /*green*/
 {
     display: flex;
     flex-direction: column;
@@ -337,7 +337,7 @@ header p
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
 {
-    #sub_sub_container_hebergement /*green*/
+    #container_hebergement /*green*/
     {
         width: 100%;
     }
@@ -347,10 +347,10 @@ header p
 {
     font-size: 1.2em;
     font-weight: bold;
-    padding-left: 2%;
+    padding-left: 20px;
 }
 
-#sub_sub_sub_container_hebergement_items /*yellow*/
+#container_hebergement_items /*yellow*/
 {
     display: flex;
     flex-wrap: wrap;
@@ -414,7 +414,6 @@ h3
     background-color: #f2f2f2;
     border-radius: 20px;
     min-width: 270px;
-    
 }
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
@@ -431,7 +430,6 @@ h3
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .populaire_item     /*black*/
@@ -441,7 +439,6 @@ h3
     border-radius: 20px;
     margin-bottom: 20px;
     display: flex;  
-
 }
 
 .populaire_item img    /*red*/
@@ -469,7 +466,7 @@ h3
 }
 /*--------------------------------------bottom section "Activités"----------------------------------*/
 
-#title_activites /*yellow*/
+#link_activites /*yellow*/
 {
     margin-top: 40px;
 }
@@ -479,7 +476,7 @@ h3
 {
     display: flex;
     flex-wrap: wrap;
-
+    margin-left: 15px;
 }
   
 .column /*blue*/ /* Create 4 equal columns that sits next to each other */

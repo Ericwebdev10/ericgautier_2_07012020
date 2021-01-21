@@ -3,12 +3,6 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="index.css" />
-        <!-- Link to Raleway font not anymore needed, switch to self-host : local folder ../fonts/xxxxx.xxx
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
-        -->   
-        <!-- Load icon library - TBU : change to local storage ?
-        -->
         <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!--added to activate fas fa-map-marker-alt and other icons-->
         <title>Reservia</title>
     </head>
@@ -22,8 +16,8 @@
             </div>    
             <nav>
                 <ul class="border black">
-                    <li><a href="#content_sub_hebergement" class="border red">Hébergements</a></li>
-                    <li><a href="#content_main_activite" class="border red">Activités</a></li>                                           
+                    <li><a href="#link_hebergement" class="border red">Hébergements</a></li>
+                    <li><a href="#link_activites" class="border red">Activités</a></li>                                           
                 </ul>
             </nav>      
                         
@@ -68,14 +62,14 @@
         <!--_____________________________________________Sections_____________________________________________-->
         <section id="main_container" class="border black">
             <!--_____________________________________________Section : hébergement_____________________________________________-->
-            <div id="sub_container_heberg_and_popu" class="border blue">              
-                <article id="sub_sub_container_hebergement" class="border green">
+            <div id="container_heberg_and_popu" class="border blue">              
+                <article id="container_hebergement" class="border green">
                     
                     <div class="border yellow container_text">
-                        <p id="content_sub_hebergement">Hébergements à Marseille</p>
+                        <p id="link_hebergement">Hébergements à Marseille</p>
                     </div>
                 
-                    <div id="sub_sub_sub_container_hebergement_items" class="border yellow">
+                    <div id="container_hebergement_items" class="border yellow">
                         <div class="border black heberg_item">
                             <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo hebergement" class="border red">
                             <h3 class="border red">Auberge de la Cannebière</h3>
@@ -212,7 +206,7 @@
 
             <!--_____________________________________________bottom section "Activités"_____________________________________________-->
             <div class="border yellow container_text">
-                <p id="title_activites">Activités à Marseille</p>
+                <p id="link_activites">Activités à Marseille</p>
             </div>
                 <div class="row border yellow">
                     <div class="column border blue"> <!--column 1-->
