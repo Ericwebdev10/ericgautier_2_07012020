@@ -320,7 +320,7 @@ header p
 {
     #container_heberg_and_popu /*blue*/
     {
-        display: flexbox;
+        display: flex;
         flex-direction: column-reverse;       
     }
 }
@@ -482,6 +482,7 @@ h3
 .column /*blue*/ /* Create 4 equal columns that sits next to each other */
 {
     flex: 25%;
+    justify-content: space-around;
 }
 
 .activites_item_big, .activites_item_small /*black*/
