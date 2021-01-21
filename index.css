@@ -1,4 +1,23 @@
-/*--Aside V1--*/
+/*------------------------------------------Debug mode--------------------------------------------------*/
+/*start debug mode
+.border{
+	border: 3px solid black;
+	margin: 2px;
+}
+.red {
+	border-color: red;
+}
+.green {
+	border-color: green;
+}
+.blue {
+	border-color: blue;
+}
+.yellow{
+    border-color: yellow;
+}
+/*end debug mode*/
+
 /*------------------------------------------Fonts--------------------------------------------------*/
 /* raleway-regular - latin */
 @font-face 
@@ -21,7 +40,7 @@ body
     width: 90%;
     margin: auto;
     font-family: 'Raleway', Arial, sans-serif; /*'CrayonL', is only for test purposes*/
-    max-width: 1100px; /*TBU or check utility*/
+    max-width: 1100px;
 }
 
 /*------------------------------------------Header--------------------------------------------------*/
@@ -40,15 +59,6 @@ nav
     right: 125px;
     top: 14px;
 }
-
-@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
-{
-    nav
-    {
-        position: initial;
-    }
-}
-
 
 #nav_item3
 {
@@ -93,6 +103,17 @@ nav a:hover
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
 {
+    nav
+    {
+        position: initial;
+    }
+
+    nav ul
+    {
+        text-align: center;  
+        border-bottom: 2px solid #f2f2f2;       
+    }
+
     nav a:hover
     {
         border-top: none;
@@ -108,6 +129,12 @@ header h1
 header p
 {
     font-size: 0.8em;
+}
+
+#header_search_form
+{
+    margin-top: 20px; /*replace <br> to keep margin with text above*/
+    height: 45px; /* replace <br> to move block filters from left to bottom*/
 }
 
 #search_map_icon
@@ -138,7 +165,7 @@ header p
     border-left: none;
     margin-left: -6px;
     float: left;  
-    width: 11%;
+    width: 20%;
     min-width: 150px;
     position: relative; /*this is to bring item to front */
     z-index: 2;         /*this is to bring item to front with higher z-index */
@@ -161,20 +188,64 @@ header p
     z-index: 1;         /*item appears in back */
 }
 
+#search_button_icon /* for responsive design : icon replace text "Rechercher" */
+{
+    visibility: hidden;
+    background-color:#0065fc;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    float: left;
+    min-width: fit-content;
+    margin-left: -102px;
+    padding-right: 15px;
+    padding-left: 20px;
+    border-radius: 10px;
+    position: relative; /*item appears in back */
+    z-index: 1;         /*item appears in back */
+}
+
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    #search_button
+    {
+        visibility: hidden;
+    }    
+    
+    #search_button_icon
+    {
+        visibility: visible;
+    }
+    #search_input
+    {
+        width: 50%;
+    }
+}
+
 #header_filters
 {
     display: flex;                  
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 20px; /*replace <br> to keep margin with text below*/
  }
 
- #filter_text
+ #filter_text /*blue*/
  {
      font-weight: bold;
      margin-top: 20px;
   }
 
-#filter_icon
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    #filter_text /*blue*/
+    {
+        width: 100%; /* move filters to bottom */
+    }
+}
+
+#filter_icon1, #filter_icon2, #filter_icon3, #filter_icon4 /* class doesn't work with button type */
 {
     background-color: #deebff;
     color: #0065fc;
@@ -190,7 +261,7 @@ header p
     z-index: 2;         /*this is to bring item to front with higher z-index */
 }
 
-#filter_button
+#filter_button1, #filter_button2, #filter_button3, #filter_button4 /* class doesn't work with button type */
 {
     background-color: white;
     border-color: #f2f2f2;
@@ -239,68 +310,54 @@ header p
 }
 
 /*------------------------------------------Sections--------------------------------------------------*/
-/*start debug mode
-.border{
-	border: 3px solid black;
-	margin: 2px;
-}
-.red {
-	border-color: red;
-}
-.green {
-	border-color: green;
-}
-.blue {
-	border-color: blue;
-}
-.yellow{
-    border-color: yellow;
-}
-/*end debug mode*/
-
-#main_container /*black*/
-{
-   /* max-width: 1200px; already define in body --> to delete  */ 
-}
-
-#sub_container_heberg_and_popu /*blue*/
+#container_heberg_and_popu /*blue*/
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
 {
-    #sub_container_heberg_and_popu /*blue*/
+    #container_heberg_and_popu /*blue*/
     {
-        display: inline; /*TBU*/
+        display: flexbox;
+        flex-direction: column-reverse;       
     }
 }
 
-#sub_sub_container_hebergement /*green*/
+#container_hebergement /*green*/
 {
     display: flex;
     flex-direction: column;
     width: 68%;
     background-color: #f2f2f2;
     border-radius: 20px;
+    margin-right: 10px; /* this is only for tablet size 768 x 1024*/
 }
 
-/*------------------------------------------------sub section Hebergement*/
-#sub_sub_sub_container_text p /*yellow*/
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
 {
+    #container_hebergement /*green*/
+    {
+        width: 100%;
+    }
+}
+/*------------------------------------------Section : hébergement-------------------------*/
+.container_text p /*yellow*/
+{
+    font-size: 1.2em;
     font-weight: bold;
-    padding-left: 2%;
+    padding-left: 20px;
 }
 
-#sub_sub_sub_container_hebergement_items /*yellow*/
+#container_hebergement_items /*yellow*/
 {
     display: flex;
     flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-#heberg_item    /*black*/
+.heberg_item    /*black*/
 {
     width: 200px;   /*must be px --> % doesn't wrap in responsive*/
     background-color: white;
@@ -308,7 +365,7 @@ header p
     margin-bottom: 20px;
 }
 
-#heberg_item img    /*red*/
+.heberg_item img    /*red*/
 {
     object-fit: cover;  /* to use portion of the image*/
     width: 96%;
@@ -321,7 +378,7 @@ header p
     border-top-right-radius: 20px;
 }
 
-#heberg_item h3 /*red*/
+h3
 {
     font-size: 0.9em;
     font-weight: bolder;
@@ -329,7 +386,7 @@ header p
     margin-left: 5%;
 }
 
-#heberg_item p /*red*/
+.heberg_item p, .populaire_item p /*red*/
 {
     font-size: 0.8em;
     font-weight: normal;
@@ -347,20 +404,157 @@ header p
     color: #f2f2f2;
 }
 
-/*------------------------------------------------sub section Populaire*/
+/*-------------------------------------Aside = sub section on right side : "Populaire"-----------------------*/
 
-#sub_sub_container_populaire    /*green*/
+#container_populaire    /*green*/
 {
     display: flex;
     flex-direction: column;
     width: 28%;
     background-color: #f2f2f2;
     border-radius: 20px;
+    min-width: 270px;
 }
 
-#sub_sub_sub_container_populaire_items /*yellow*/
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    #container_populaire /*green*/
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+#container_populaire_items /*yellow*/
 {
     display: flex;
     flex-wrap: wrap;
-	justify-content: space-around;
+    justify-content: space-around;
+}
+
+.populaire_item     /*black*/
+{
+    /*width: 200px;   /*must be px --> % doesn't wrap in responsive*/
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;  
+}
+
+.populaire_item img    /*red*/
+{
+    object-fit: cover;  /* to use portion of the image*/
+    width: 100px;
+    height: 130px;
+    display: block;     /* to allow centering*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaire_item h3 /*red*/
+{
+    height: 30px;
+    width: 150px;
+}
+
+.stars_item
+{
+    margin-top: 45px;
+}
+/*--------------------------------------bottom section "Activités"----------------------------------*/
+
+#link_activites /*yellow*/
+{
+    margin-top: 40px;
+}
+
+/*w3schools.com : image grid with row and column setup*/
+.row /*yellow*/ 
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+  
+.column /*blue*/ /* Create 4 equal columns that sits next to each other */
+{
+    flex: 25%;
+}
+
+.activites_item_big, .activites_item_small /*black*/
+{
+    width: 220px;
+    height: 400px;
+    border: 1px solid  #f2f2f2; /*needed for left corner to be visible enough*/
+    box-shadow: 6px 6px 6px  #f2f2f2; 
+    border-radius: 20px; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.activites_item_small /*black*/
+{ 
+    height: 185px;
+}
+
+.activites_item_big img, .activites_item_small img /* red*/
+{
+    width: 220px;
+    height: 360px;
+    object-fit: cover;/* to use portion of the image*/
+    display: block; /* to allow centering*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites_item_small img /*red*/
+{
+    height: 145px;
+}
+
+/*---------------------------------footer-----------------------------------------*/
+#container_footer /*black*/
+{
+    display: flex;
+    margin-top: 50px;
+    background-color: #f2f2f2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    #container_footer /*green*/
+    {
+        display: block;
+        margin-top: 50px;
+    }
+}
+
+.footer_item /* green*/
+{
+    width: 300px;
+    margin-right: 60px;
+}
+
+
+.footer_item a
+{
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.footer_item ul
+{
+    list-style-type: none;
+}
+.ul_title
+{
+    padding-left: 38px;
 }
