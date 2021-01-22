@@ -44,20 +44,25 @@ body
 }
 
 /*------------------------------------------Header--------------------------------------------------*/
-#register_position
+#header_logo_and_nav /*black*/
 {
-    position: absolute;
-    right: 25px;
-    top: 30px;
-    width: 100px;
+    display: flex;
+    justify-content:space-between ;
+}
+
+#nav_register /*red*/
+{
+    padding-top: 29px;
+    margin-right: 20px;
     font-weight: bold;
 }
 
 nav
 {
-    position: absolute;
-    right: 125px;
-    top: 14px;
+    position: relative;
+    top: -47px;
+    text-align: right;
+    padding-right: 100px;
 }
 
 #nav_item3
@@ -66,7 +71,7 @@ nav
     text-decoration: none;
 }
 
-#register_position :hover
+#nav_register :hover
 {
     border-top: 2px solid #0065fc;
 }
@@ -77,12 +82,12 @@ header img
     padding-top: 20px;
 }
 
-nav ul
+nav ul /*black*/
 {
     list-style-type: none;
 }
 
-nav li
+nav li /*red*/
 {
     display: inline-block;
     margin-right: 50px;
@@ -106,6 +111,7 @@ nav a:hover
     nav
     {
         position: initial;
+        padding-right: 0px;
     }
 
     nav ul
@@ -343,11 +349,21 @@ header p
     }
 }
 /*------------------------------------------Section : hébergement-------------------------*/
-.container_text p /*yellow*/
+.container_text p, .container_text2 p /*yellow*/
 {
     font-size: 1.2em;
     font-weight: bold;
     padding-left: 20px;
+}
+
+@media all and (max-width: 767.95px) /*same as OC website breakpoint*/
+{
+    .container_text2 p /*yellow*/   /* only to center "les plus populaires" in resp.*/
+    {
+        display: flex; 
+        justify-content: space-around;
+        padding-left: 0px;
+    }
 }
 
 #container_hebergement_items /*yellow*/
