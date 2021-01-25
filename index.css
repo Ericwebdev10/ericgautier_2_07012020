@@ -241,6 +241,7 @@ header p
  {
      font-weight: bold;
      margin-top: 20px;
+     margin-right: 20px;
   }
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
@@ -261,7 +262,6 @@ header p
     float: left;
     text-align: center;
     min-width: 40px;
-    margin-left: 20px;
     margin-top: 10px;/* this is for responsive when wrapped*/
     position: relative; /*this is to bring item to front */
     z-index: 2;         /*this is to bring item to front with higher z-index */
@@ -280,6 +280,7 @@ header p
     padding-left: 50px;
     padding-right: 20px;
     margin-left: -40px;
+    margin-right: 20px;
     margin-top: 10px; /* this is for responsive when wrapped*/
     border-radius: 50px;
     position: relative; /*item appears in back */
