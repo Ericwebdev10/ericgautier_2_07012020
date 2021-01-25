@@ -319,7 +319,7 @@ header p
 #container_heberg_and_popu /*blue*/
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
@@ -498,13 +498,12 @@ h3
 {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 15px;
 }
   
 .column /*blue*/ /* Create 4 equal columns that sits next to each other */
 {
     flex: 25%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .activites_item_big, .activites_item_small /*black*/
