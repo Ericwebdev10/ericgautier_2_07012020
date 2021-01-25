@@ -71,7 +71,7 @@ nav
     text-decoration: none;
 }
 
-#nav_register :hover
+#nav_register:hover
 {
     border-top: 2px solid #0065fc;
 }
@@ -499,12 +499,14 @@ h3
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
   
 .column /*blue*/ /* Create 4 equal columns that sits next to each other */
 {
-    flex: 25%;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .activites_item_big, .activites_item_small /*black*/
@@ -571,6 +573,11 @@ h3
     font-size: 1em;
     text-decoration: none;
     color: black;
+}
+
+.footer_item li
+{
+    margin-bottom: 10px;
 }
 
 .footer_item ul
