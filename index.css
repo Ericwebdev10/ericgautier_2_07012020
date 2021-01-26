@@ -52,17 +52,17 @@ body
 
 #nav_register /*red*/
 {
-    padding-top: 29px;
-    margin-right: 20px;
     font-weight: bold;
+    padding: 2rem;
+    margin-top: 2px;
 }
 
-nav
+nav /*black*/
 {
     position: relative;
-    top: -47px;
+    top: -65px;
     text-align: right;
-    padding-right: 100px;
+    padding-right: 120px;
 }
 
 #nav_item3
@@ -98,12 +98,14 @@ nav a
     font-size: 1em;
     text-decoration: none;
     color: black;
+    padding: 2rem;
 }
 
 nav a:hover
 {
     color: #0065fc;
     border-top: 2px solid #0065fc;
+    font-weight: bold;
 }
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
@@ -114,6 +116,16 @@ nav a:hover
         padding-right: 0px;
     }
 
+    nav a
+    {
+        padding: 0rem;
+    }
+    /*
+    nav li
+    {
+        width: 30%;
+    }
+    */
     nav ul
     {
         text-align: center;  
