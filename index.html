@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css" />
         <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!--added to activate fas fa-map-marker-alt and other icons-->
         <title>Reservia</title>
@@ -9,54 +10,55 @@
 
     <body>
         <!--_____________________________________________Header_____________________________________________-->
-        <header> 
-            <div id="header_logo_and_nav" class="border black">
-                <img src="images/logo/Reservia@3x.png" alt="logo Reservia" class="border red">
-                <div id="nav_register" class="border red"><a href="#" id="nav_item3">S'inscrire</a></div>
-            </div>    
+        <header class="border red"> 
+            <div id="logo" class="border black">
+                <img src="./Images/logo/Reservia.svg" alt= logo/>
+            </div>
+      
             <nav class="border green">
-                <ul class="border black">
-                    <li class="border yellow"><a href="#link_hebergement" class="border red">Hébergements</a></li>
-                    <li class="border yellow"><a href="#link_activites" class="border red">Activités</a></li>                                           
+                <ul class="border yellow">
+                    <li class="barreG border red"><a class="border black" href="#link_hebergement">Hébergements</a></li>
+                    <li class="barreD border red"><a class="border black" href="#link_activites">Activités</a></li>
                 </ul>
-            </nav>      
-                        
-            <h1 class="border red">Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p class="border red">En plein centre ville ou en pleine nature</p>
-
-            <form id="header_search_form" class="border blue" method="POST" action="noaction"> <!--keep action= "blank" to avoid error message when clicked-->
-                <button id="search_map_icon" type="button" class="border red"><i class='fas fa-map-marker-alt'></i></button> <!--need script in head <script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
-                <input id="search_input" type="text" class="border red" placeholder="Marseille, France" name="search">
-                <button id="search_button" type="submit" class="border red">Rechercher</button>
-                <button id="search_button_icon" type="submit" class="border red"><i class='fas fa-search'></i></button> <!--for responsive design : icon replace text "Rechercher"-->
-            </form>
-                           
-            
-            <div id="header_filters" class="border black">
-                <div id="filter_text" class="border blue">Filtres</div>    
-                <form method="POST" action="noaction" class="border blue"> 
-                    <button id="filter_icon1" type="button"><i class='fas fa-money-bill-wave'></i></button> 
-                    <button id="filter_button1" type="submit">Économique</button>
-                </form>             
-                <form method="POST" action="noaction" class="border blue"> 
-                    <button id="filter_icon2" type="button"><i class="fas fa-child"></i></button> 
-                    <button id="filter_button2" type="submit">Familial</button>
-                </form>             
-                <form method="POST" action="noaction" class="border blue"> 
-                    <button id="filter_icon3" type="button"><i class="fas fa-heart"></i></button> 
-                    <button id="filter_button3" type="submit">Romantique</button>
-                </form>             
-                <form method="POST" action="noaction" class="border blue"> 
-                    <button id="filter_icon4" type="button"><i class="fas fa-dog"></i></button> 
-                    <button id="filter_button4" type="submit">Animaux autorisés</button>
-                </form>             
-            </div>
-
-            <div id="header_info" class="border red">
-                <span><i class="fas fa-info-circle"></i></span> <!--add <span> tag to avoid blue "leakage" when text is wrapped-->
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
+                <div id="inscription" class=" border black"><a href="#">S'inscrire</a></div>
+            </nav>
         </header>
+
+        <h1 class="border red">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="border red">En plein centre ville ou en pleine nature</p>
+
+        <form id="header_search_form" class="border blue" method="POST" action="noaction"> <!--keep action= "blank" to avoid error message when clicked-->
+            <button id="search_map_icon" type="button" class="border red"><i class='fas fa-map-marker-alt'></i></button> <!--need script in head <script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
+            <input id="search_input" type="text" class="border red" placeholder="Marseille, France" name="search">
+            <button id="search_button" type="submit" class="border red">Rechercher</button>
+            <button id="search_button_icon" type="submit" class="border red"><i class='fas fa-search'></i></button> <!--for responsive design : icon replace text "Rechercher"-->
+        </form>
+                           
+        <div id="header_filters" class="border black">
+            <div id="filter_text" class="border blue"><h2>Filtres</h2></div>    
+            <form method="POST" action="noaction" class="border blue"> 
+                <button id="filter_icon1" type="button"><i class='fas fa-money-bill-wave'></i></button> 
+                <button id="filter_button1" type="submit">Économique</button>
+            </form>             
+            <form method="POST" action="noaction" class="border blue"> 
+                <button id="filter_icon2" type="button"><i class="fas fa-child"></i></button> 
+                <button id="filter_button2" type="submit">Familial</button>
+            </form>             
+            <form method="POST" action="noaction" class="border blue"> 
+                <button id="filter_icon3" type="button"><i class="fas fa-heart"></i></button> 
+                <button id="filter_button3" type="submit">Romantique</button>
+            </form>             
+            <form method="POST" action="noaction" class="border blue"> 
+                <button id="filter_icon4" type="button"><i class="fas fa-dog"></i></button> 
+                <button id="filter_button4" type="submit">Animaux autorisés</button>
+            </form>             
+        </div>
+
+        <div id="header_info" class="border red">
+            <span><i class="fas fa-info-circle"></i></span> <!--add <span> tag to avoid blue "leakage" when text is wrapped-->
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+        
         <br>   
         
         <!--_____________________________________________Sections_____________________________________________-->
@@ -66,7 +68,7 @@
                 <article id="container_hebergement" class="border green">
                     
                     <div class="border yellow container_text">
-                        <p id="link_hebergement">Hébergements à Marseille</p>
+                        <h2 id="link_hebergement">Hébergements à Marseille</h2>
                     </div>
                 
                     <div id="container_hebergement_items" class="border yellow">
