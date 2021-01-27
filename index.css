@@ -44,100 +44,157 @@ body
 }
 
 /*------------------------------------------Header--------------------------------------------------*/
-#header_logo_and_nav /*black*/
+header /*red*/
 {
-    display: flex;
-    justify-content:space-between ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-#nav_register /*red*/
+nav /*green*/
 {
-    padding-top: 29px;
-    margin-right: 20px;
-    font-weight: bold;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	/*width: 31.25rem;*/
 }
 
-nav
+nav ul /*yellow*/
 {
-    position: relative;
-    top: -47px;
-    text-align: right;
-    padding-right: 100px;
-}
-
-#nav_item3
-{
-    color: #0065fc;
-    text-decoration: none;
-}
-
-#nav_register:hover
-{
-    border-top: 2px solid #0065fc;
-}
-
-header img
-{
-    height: 40px;
-    padding-top: 20px;
-}
-
-nav ul /*black*/
-{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	width:50%;
+    order: 0;
     list-style-type: none;
 }
 
-nav li /*red*/
+.barreG a, .barreD a /*red*/
 {
-    display: inline-block;
-    margin-right: 50px;
+	font-weight: 400;
+	font-size: 0.9rem;
+	color: #000000;
+	text-decoration: none;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-nav a
+.barreG a:hover, .barreD a:hover
 {
-    font-size: 1em;
-    text-decoration: none;
-    color: black;
+    color: #0065FC;
+    border-top: 3px solid #0065fc;
 }
 
-nav a:hover
+#inscription /*black*/
 {
-    color: #0065fc;
-    border-top: 2px solid #0065fc;
+	display: flex;
+	justify-content: flex-end;
+    /*width: 30%;*/
+    margin-top: 3px;
+    padding-left: 15px;
+}
+
+#inscription a
+{	
+	font-size: 0.9rem;
+	color: #0065FC;
+	font-weight: 700;
+	text-decoration: none;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#inscription a:hover
+{
+	color: #000000;
+	font-weight: 500;
+	border-top: 3px solid #0065fc;
 }
 
 @media all and (max-width: 767.95px) /*same as OC website breakpoint*/
 {
-    nav
+    header /*red*/
     {
-        position: initial;
-        padding-right: 0px;
+        height: 10rem;
     }
 
-    nav ul
+    header img
     {
-        text-align: center;  
-        border-bottom: 2px solid #f2f2f2;       
+        position: absolute;
     }
 
-    nav a:hover
+    #logo
+    {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    nav /*green*/
+    {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    nav ul /*yellow*/
+    {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 50px;
+        order: 1; /*move nav to bottom*/
+    }
+
+    #inscription /*black*/
+    {
+        width: 100%;
+    }
+
+    .barreG, .barreD /*red*/
+    {
+        border-bottom: 0.19rem solid #F2F2F2;
+        width: 50%;       
+    }
+
+    .barreG:hover, .barreD:hover
+    {
+        border-bottom: 0.19rem solid #0065FC;
+    }
+
+    .barreG a, .barreD a, #inscription a
+    {
+        font-size: 1rem;
+    }
+
+    .barreG a, .barreD a /*red*/
+    {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0.9rem;
+    }
+
+    .barreG a:hover, .barreD a:hover
     {
         border-top: none;
-        border-bottom: 2px solid #0065fc;
     }
 }
 
-header h1
+
+h1
 {
     font-size: 1.2em;
 }
 
-header p
+p
 {
     font-size: 0.8em;
 }
 
-#header_search_form
+#header_search_form /*blue*/
 {
     margin-top: 20px; /*replace <br> to keep margin with text above*/
     height: 45px; /* replace <br> to move block filters from left to bottom*/
@@ -229,7 +286,7 @@ header p
     }
 }
 
-#header_filters
+#header_filters /*black*/
 {
     display: flex;                  
     flex-direction: row;
@@ -566,7 +623,6 @@ h3
     width: 300px;
     margin-right: 60px;
 }
-
 
 .footer_item a
 {
