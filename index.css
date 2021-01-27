@@ -407,7 +407,7 @@ p
     }
 }
 /*------------------------------------------Section : hébergement-------------------------*/
-.container_text p, .container_text2 p /*yellow*/
+.container_text p, .container_text2 p, h2 /*yellow*/
 {
     font-size: 1.2em;
     font-weight: bold;
